@@ -14,9 +14,7 @@ form.addEventListener('submit', (e) => {
             participants.push(name)
             let item = createListItem(name)
             nameList.appendChild(item)
-
             console.log(participants);
-
             inputNames.value = ''
         })
     }
