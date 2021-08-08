@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raffle Draw App</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gray-100">
+    <header>
+        <div class="py-20 bg-red-700 text-white text-center font-thin">
+            <h2 class="text-xl sm:text-2xl md:text-4xl lg:text-6xl">Raffle Draw App - Vanilla JS</h2>
+        </div>
+    </header>
     
+    <div class="w-full px-6 md:px-0 md:w-10/12 xl:w-8/12 mx-auto grid grid-cols-3 gap-8 mt-12">
+        <div class="py-4 px-4 bg-green-100 rounded-sm shadow-md text-gray-600">First Winner : <span class="text-black">Winner 1</span></div>
+        <div class="py-4 px-4 bg-yellow-100 rounded-sm shadow-md text-gray-600">Second Winner : <span class="text-black">Winner 2</span></div>
+        <div class="py-4 px-4 bg-pink-100 rounded-sm shadow-md text-gray-600">Third Winner : <span class="text-black">Winner 3</span></div>
+    </div>
+
+    <div class="w-full px-6 md:px-0 md:w-10/12 xl:w-8/12 mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+            <form>
+                <textarea name="" id="" class="w-full border shadow-sm focus:outline-none px-3 py-2 text-sm h-48" placeholder="All Names (Multiple names will separate by comma and space, EX: Saif, Sakib, Masum)"></textarea>
+
+                <button class="bg-blue-600 hover:bg-blue-800 text-white px-4 py-1 rounded-sm mt-6 text-sm uppercase transition duration-300">Submit</button>
+            </form>
+            
+            <div class="flex flex-wrap gap-2 mt-6 text-sm">
+                <span class="px-2 py-1 border rounded-sm bg-gray-50">Saifullah Saif</span>
+                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Arif</span>
+                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Billah</span>
+                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Billah</span>
+                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Billah</span>
+                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Billah</span>
+            </div>
+        </div>
+        <div>
+            <div class="border rounded-sm p-6 bg-white h-48 flex">
+                <h1 class="text-4xl font-thin w-max mx-auto self-center">A.S.M Saifullah Siddique</h1>
+            </div>
+
+            <button class="bg-yellow-300 hover:bg-yellow-400 px-4 py-1 rounded-sm mt-6 text-sm uppercase transition duration-300">Spin a Try</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
