@@ -23,19 +23,14 @@
 
     <div class="w-full px-6 md:px-0 md:w-10/12 xl:w-8/12 mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
-            <form>
-                <textarea name="" id="" class="w-full border shadow-sm focus:outline-none px-3 py-2 text-sm h-48" placeholder="All Names (Multiple names will separate by comma and space, EX: Saif, Sakib, Masum)"></textarea>
+            <form id="form" action="/">
+                <textarea name="" id="names" class="w-full border shadow-sm focus:outline-none px-3 py-2 text-sm h-48" placeholder="All Names (Multiple names will separate by comma and space, EX: Saif, Sakib, Masum)"></textarea>
 
-                <button class="bg-blue-600 hover:bg-blue-800 text-white px-4 py-1 rounded-sm mt-6 text-sm uppercase transition duration-300">Submit</button>
+                <button class="bg-blue-600 hover:bg-blue-800 text-white px-4 py-1 rounded-sm mt-6 text-sm uppercase transition duration-300" type="submit">Submit</button>
             </form>
             
-            <div class="flex flex-wrap gap-2 mt-6 text-sm">
-                <span class="px-2 py-1 border rounded-sm bg-gray-50">Saifullah Saif</span>
-                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Arif</span>
-                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Billah</span>
-                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Billah</span>
-                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Billah</span>
-                <span class="px-2 py-1 border rounded-sm bg-gray-50">Masum Billah</span>
+            <div id="nameList" class="flex flex-wrap gap-2 mt-6 text-sm">
+                <!-- Name List -->
             </div>
         </div>
         <div>
